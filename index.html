@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>SNAKE CLASSICS
-        </title>
-        <style>
-           
-            #mycanvas{
-                background-color: black;
-                width: 150vmin;
-                height: 92vmin;
-                border: 2px solid papayawhip;
-                display: grid;
-                grid-template-rows: repeat(18, 1fr);
-                grid-template-columns: repeat(18, 1fr);
-            
-                
-            }
-              #scoreBox{
-                position: absolute;
-                top: 250px;
-                right: 200px;
-                font-size: 72px;
-                font-weight: bold;
-                font-family: 'New Tegomin', serif;
-            }
-              #hiscoreBox{
-                position: absolute;
-                top: 89px;
-                right: 140px;
-                font-size: 72px;
-                font-weight: bold;
-                font-family: 'New Tegomin', serif;
-            }
-            #board{
-                width: 1px;;
-                height: 1px;;
-                
-            }
-            
-        </style>
-    </head>
-    <body>
-        <!-- <div id="score">Score</div> -->
-        <div id="board"></div>
-        <div id="scoreBox">Score: 0</div>
-        <div id="hiscoreBox">HiScore: 0</div>
+
+<head>
+    <title>SNAKE CLASSICS
+    </title>
+    <style>
+        #mycanvas {
+            background-color: black;
+            width: 150vmin;
+            height: 92vmin;
+            display: grid;
+            grid-template-rows: repeat(18, 1fr);
+            grid-template-columns: repeat(18, 1fr);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+
+
+        }
+
+        #scoreBox {
+            position: absolute;
+            top: 400px;
+            right: 200px;
+            font-size: 48px;
+            font-weight: bold;
+            font-family: 'New Tegomin', serif;
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+            width: 100%;
+
+        }
+
+        #hiscoreBox {
+            position: absolute;
+            top: 250px;
+            right: 140px;
+            font-size: 54px;
+            font-weight: bold;
+            font-family: 'New Tegomin', serif;
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+            width: 100%;
+
+        }
+
+        #author {
+            color: black;
+            position: absolute;
+            top: 89px;
+            right: 40px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'New Tegomin', serif;
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+            -webkit-text-stroke: 1px black;
+            text-shadow: 0 0 2px gray;
+
+        }
+
+        #author span {
+            color: black;
+            position: absolute;
+            top: 91px;
+            right: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: 'New Tegomin', serif;
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+            -webkit-text-stroke: 1px black;
+            text-shadow: 0 0 2px gray;
+
+        }
+
+        #board {
+            width: 1px;
+            height: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="score">Score</div> -->
+    <div id="board"></div>
+    <div id="author">
+        SNAKE
+        CLASSICS
+        <span>-> By Sindu</span>
+    </div>
+    <div id="scoreBox">Score: 0</div>
+    <div id="hiscoreBox">HiScore: 0</div>
+
+    <div style="text-align:center; border: 5px groove darksalmon rgb(234, 171, 71);">
         <canvas id="mycanvas"></canvas>
-        <script src="functionality.js"></script>
-    </body>
+    </div>
+
+    <script src="functionality.js"></script>
+</body>
+
 </html>
